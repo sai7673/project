@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+
+        }
+     
+        .box{
+            height: 90vh;
+            width: 100%;
+            font-size: 40px;
+  
+        }
+
+        .box1{
+            background-color: aqua;
+            display: none;
+        }
+
+        .box2{
+            background-color: crimson;
+            display: none;
+        }
+        .box3{
+            background-color: chartreuse;
+            display: none;
+        }
+        .box4{
+            background-color: purple;
+            display: none;
+        }
+
+        @media screen and (max-width : 500px ) {
+            .box1{
+                display: flex;
+              
+            }
+        }
+
+        @media screen and (min-width:501px ) and (max-width : 700px ) {
+            .box2{
+                display: flex;
+              
+            }
+        }
+
+        @media screen and (min-width:701px ) and (max-width : 1200px ) {
+            .box3{
+                display: flex;
+               
+            }
+        }
+
+        @media screen and (min-width:1201px )  {
+            .box4{
+                display: flex;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+<div id="container">
+    <div class="box box1">
+        IM SMALL SCREEN (MOBILE PHONES)
+    </div>
+
+    <div class="box box2">
+        IM MEDIUM SCREEN (TABS)
+    </div>
+
+    <div class="box box3">
+        IM LARGE SCREENS(LAPTOPS , DESKTOPS)
+    </div>
+
+    <div class="box box4">
+        IM X-LARGE SCREENS(TELIVISIONS , PROJECTORS)
+    </div>
+</div>
+
+
+</body>
+</html>
